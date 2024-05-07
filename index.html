@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriptografi Modern</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Kriptografi Modern Symmetric (AES) dan Asymmetric (RSA) Generator</h1>
+    </header>
+
+    <div class="container">
+        <h2>Pilih Tipe Kriptografi Modern</h2>
+        <button class="button" onclick="showAES()">Symmetric (AES)</button>
+        <button class="button" onclick="showRSA()">Asymmetric (RSA)</button>
+
+        <div id="aesSection" style="display:none">
+            <h3>Encryption with AES</h3>
+            <input type="text" id="aesKey" placeholder="Masukkan kunci">
+            <textarea id="aesMessage" placeholder="Masukkan pesan"></textarea>
+            <button class="button" onclick="encryptAES()">Enkripsi</button>
+            <button class="button" onclick="decryptAES()">Deskripsi</button>
+            <p id="aesOutput"></p>
+        </div>
+
+        <div id="rsaSection" style="display:none">
+            <h3>Encryption with RSA</h3>
+            <p>Note! Public and private keys have been generated randomly, input message only.</p>
+            <textarea id="rsaPlaintext" placeholder="Masukkan plaintext"></textarea>
+            <button class="button" onclick="encryptRSA()">Enkripsi</button>
+            <button class="button" onclick="decryptRSA()">Deskripsi</button>
+            <textarea id="rsaCiphertext" placeholder="Output ciphertext akan muncul di sini" readonly></textarea>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Akbar Saepul Rizal | Informatika Universitas Siliwangi 2024</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrsasign/10.4.0/jsrsasign-all-min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

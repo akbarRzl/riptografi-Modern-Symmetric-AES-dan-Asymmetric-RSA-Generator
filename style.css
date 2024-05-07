@@ -1,0 +1,91 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    background-color: #17d385;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px; /* Memberikan padding bottom untuk menghindari footer menabrak konten */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Menjadikan konten dalam container menjadi terpusat */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px; /* Menambahkan ruang di bawah judul */
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px; /* Menyesuaikan jarak antara tombol */
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+textarea {
+    height: 150px;
+}
+
+#aesOutput, #rsaOutput {
+    margin-top: 10px;
+    word-wrap: break-word; /* Menambahkan properti word-wrap */
+}
+
+#aesOutput::before, #rsaOutput::before {
+    content: "Output: ";
+    font-weight: bold;
+}
+
+#rsaPlaintext, #rsaCiphertext {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: vertical;
+    font-family: monospace;
+}
+
+header, footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
